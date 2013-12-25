@@ -1,0 +1,24 @@
+{
+  "name": "qingcloud-sdk",
+  "version": "0.0.0",
+  "description": "qingcloud sdk & cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Pana/qingcloud-sdk.git"
+  },
+  "keywords": [
+    "qingcloud",
+    "sdk",
+    "cli"
+  ],
+  "author": "Pana",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Pana/qingcloud-sdk/issues"
+  },
+  "homepage": "https://github.com/Pana/qingcloud-sdk"
+}
