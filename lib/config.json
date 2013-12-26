@@ -1,0 +1,88 @@
+{
+    "host": "https://api.qingcloud.com/iaas/",
+    "version": 1,
+    "signature_version": 1,
+    "actions": {
+        "DescribeImages": {
+            "required": ["zone"],
+            "optional": ["images.n", "processor_type", "os_family", "visibility", "provider", "status.n", "search_word", "verbose", "offset", "limit"]
+        },
+        "CaptureInstance": {"required": ["instance", "zone"], "optional": ["image_name"]},
+        "DeleteImages": {"required": ["images.n", "zone"], "optional": []},
+        "ModifyImageAttributes": {"required": ["image", "zone"], "optional": ["image_name", "description"]},
+
+        "DescribeInstances": {
+            "required": ["zone"], 
+            "optional": ["instances.n", "image_id.n", "instance_type.n", "status.n", "search_word", "verbose", "offset", "limit"]
+        },
+        "RunInstances": {
+            "required": ["image_id", "zone"], 
+            "optional": ["instance_type", "count", "instance_name", "login_mode", "login_keypair", "login_passwd", "vxnets.n", "security_group"]
+        },
+        "TerminateInstances": {"required": ["instances.n", "zone"], "optional": []},
+        "StartInstances": {"required": ["instances.n", "zone"], "optional": []},
+        "StopInstances": {"required": ["instances.n", "zone"], "optional": ["force"]},
+        "RestartInstances": {"required": ["instances.n", "zone"], "optional": []},
+        "ResetInstances": {"required": ["instances.n", "zone"], "optional": []},
+        "ResizeInstances": {"required": ["instances.n"], "optional": ["instance_type", "cpu", "memory", "zone"]},
+        "ModifyInstanceAttributes": {"required": ["instance", "zone"], "optional": ["instance_name", "description"]},
+
+        "DescribeVolumes": {"required": ["zone"], "optional": ["volumes.n", "instance_id", "status.n", "search_word", "verbose", "offset", "limit"]},
+        "CreateVolumes": {"required": ["size", "zone"], "optional": ["volume_name", "count"]},
+        "DeleteVolumes": {"required": ["volumes.n", "zone"], "optional": []},
+        "AttachVolumes": {"required": ["volumes.n", "instance", "zone"], "optional": []},
+        "DetachVolumes": {"required": ["volumes.n", "instance", "zone"], "optional": []},
+        "ResizeVolumes": {"required": ["volumes.n", "size", "zone"], "optional": []},
+        "ModifyVolumeAttributes": {"required": ["volume", "zone"], "optional": ["volume_name", "description"]},
+
+        "DescribeVxnets": {"required": [], "optional": []},
+        "CreateVxnets": {"required": [], "optional": []},
+        "DeleteVxnets": {"required": [], "optional": []},
+        "JoinVxnet": {"required": [], "optional": []},
+        "LeaveVxnet": {"required": [], "optional": []},
+        "ModifyVxnetAttributes": {"required": [], "optional": []},
+        "DescribeVxnetInstances": {"required": [], "optional": []},
+
+        "DescribeRouters": {"required": [], "optional": []},
+        "CreateRouters": {"required": [], "optional": []},
+        "DeleteRouters": {"required": [], "optional": []},
+        "UpdateRouters": {"required": [], "optional": []},
+        "PowerOffRouters": {"required": [], "optional": []},
+        "PowerOnRouters": {"required": [], "optional": []},
+        "JoinRouter": {"required": [], "optional": []},
+        "LeaveRouter": {"required": [], "optional": []},
+        "ModifyRouterAttributes": {"required": [], "optional": []},
+        "DescribeRouterStatics": {"required": [], "optional": []},
+        "AddRouterStatics": {"required": [], "optional": []},
+        "DeleteRouterStatics": {"required": [], "optional": []},
+        "DescribeRouterVxnets": {"required": [], "optional": []},
+
+        "DescribeEips": {"required": [], "optional": []},
+        "AllocateEips": {"required": [], "optional": []},
+        "ReleaseEips": {"required": [], "optional": []},
+        "AssociateEip": {"required": [], "optional": []},
+        "DissociateEips": {"required": [], "optional": []},
+        "ChangeEipsBandwidth": {"required": [], "optional": []},
+        "ModifyEipAttributes": {"required": [], "optional": []},
+
+        "DescribeSecurityGroups": {"required": [], "optional": []},
+        "CreateSecurityGroup": {"required": [], "optional": []},
+        "DeleteSecurityGroups": {"required": [], "optional": []},
+        "ApplySecurityGroup": {"required": [], "optional": []},
+        "ModifySecurityGroupAttributes": {"required": [], "optional": []},
+        "DescribeSecurityGroupRules": {"required": [], "optional": []},
+        "AddSecurityGroupRules": {"required": [], "optional": []},
+        "DeleteSecurityGroupRules": {"required": [], "optional": []},
+        "ModifySecurityGroupRuleAttributes": {"required": [], "optional": []},
+
+        "DescribeKeyPairs": {"required": [], "optional": []},
+        "CreateKeyPair": {"required": [], "optional": []},
+        "DeleteKeyPairs": {"required": [], "optional": []},
+        "AttachKeyPairs": {"required": [], "optional": []},
+        "DetachKeyPairs": {"required": [], "optional": []},
+        "ModifyKeyPairAttributes": {"required": [], "optional": []}
+    },
+    "errors": {
+
+    }
+}

@@ -11,14 +11,25 @@
     "url": "git://github.com/Pana/qingcloud-sdk.git"
   },
   "keywords": [
+    "qing",
     "qingcloud",
     "sdk",
-    "cli"
+    "cli",
+    "qingyun"
   ],
   "author": "Pana",
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/Pana/qingcloud-sdk/issues"
   },
-  "homepage": "https://github.com/Pana/qingcloud-sdk"
+  "homepage": "https://github.com/Pana/qingcloud-sdk",
+  "dependencies": {
+    "request": "~2.30.0",
+    "moment": "~2.5.0",
+    "underscore": "*",
+    "async": "*"
+  },
+  "devDependencies": {
+    "mocha": "~1.16.2"
+  }
 }
