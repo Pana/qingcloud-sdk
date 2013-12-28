@@ -1,10 +1,10 @@
 {
   "name": "qingcloud-sdk",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "qingcloud sdk & cli",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make"
   },
   "repository": {
     "type": "git",
@@ -18,16 +18,13 @@
     "qingyun"
   ],
   "author": "Pana",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Pana/qingcloud-sdk/issues"
   },
   "homepage": "https://github.com/Pana/qingcloud-sdk",
   "dependencies": {
-    "request": "~2.30.0",
-    "moment": "~2.5.0",
-    "underscore": "*",
-    "async": "*"
+    "request": "~2.30.0"
   },
   "devDependencies": {
     "mocha": "~1.16.2"
