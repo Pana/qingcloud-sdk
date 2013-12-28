@@ -1,17 +1,18 @@
 qingcloud-sdk
 =============
+A node port of qingcloud.com's python SDK library.
 
-qingcloud.com Node.js SDK 
-
-## install
+## Install
 
     npm install qingcloud-sdk
 
-## example
+## Example
 ```
 var qing = require('qing');
+// set key_id and key
 qing.access_key_id = 'access_key_id';
 qing.secret_access_key = 'secret_access_key';
+// call the API
 qing.DescribeInstances(function(err, data){
     if(err)
         console.log(err.message);
@@ -117,6 +118,10 @@ qing.DescribeInstances(function(err, data){
 * 具体参数参看青云[官方文档](https://docs.qingcloud.com/api/index.html)
 
 
+## Test
+修改test/test.js 设置key_id和key
+    
+    make
 
 ## TODO
 
