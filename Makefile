@@ -1,4 +1,4 @@
 test:
-	./node_modules/.bin/mocha --reporter list
+	./node_modules/.bin/mocha --reporter list -t 20000
 
 .PHONY: test
