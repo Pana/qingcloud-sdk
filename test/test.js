@@ -4,26 +4,26 @@ var qing = require('../index')
     , assert = require('assert');
 
 // 有没有更好的设置方式
-qing.access_key_id = 'AHWWMNZAZANMVXEDYGOQ';
-qing.secret_access_key = 'tPDFuwrXLDEwdnhENhoS1hJYgzuTafm7Luxl2ywe';
+qing.access_key_id = '';
+qing.secret_access_key = '';
 
 
 
 
 
-// describe('Instance APIs', function(){
+describe('Instance APIs', function(){
 
-//     it('DescribeInstances', function(done){
-//         qing.DescribeInstances(function(err, data){
-//             if(err)
-//                 console.log(err.message);
-//             else
-//                 console.log(data);
-//             done();
-//         }, {zone: 'pek1', "instances.n": ["hello"]});
-//     })
+    it('DescribeInstances', function(done){
+        qing.DescribeInstances(function(err, data){
+            if(err)
+                console.log(err.message);
+            else
+                console.log(data);
+            done();
+        }, {zone: 'pek1'});
+    })
 
-// });
+});
 
 
 
