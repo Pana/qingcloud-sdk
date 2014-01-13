@@ -11,38 +11,36 @@ qing.secret_access_key = '';
 
 
 
-describe('Instance APIs', function(){
+// describe('Instance APIs', function(){
 
-    it('DescribeInstances', function(done){
-        qing.DescribeInstances(function(err, data){
-            if(err)
-                console.log(err.message);
-            else
-                console.log(data);
-            done();
-        }, {zone: 'pek1'});
-    })
-
-});
-
-
-
-
-// describe('Image APIs', function(){
-//     it('DescribeImages', function(done){
-
-//         qing.DescribeImages(function(err, data){
+//     it('DescribeInstances', function(done){
+//         qing.DescribeInstances({zone: 'pek1'}, function(err, data){
 //             if(err)
 //                 console.log(err.message);
 //             else
 //                 console.log(data);
 //             done();
-//         }, {
-//             zone: 'pek1'
 //         });
+//     })
 
-//     });
 // });
+
+
+
+
+describe('Image APIs', function(){
+    it('DescribeImages', function(done){
+
+        qing.DescribeImages({zone: 'pek1'}, function(err, data){
+            if(err)
+                console.log(err.message);
+            else
+                console.log(data);
+            done();
+        });
+
+    });
+});
 
 
 

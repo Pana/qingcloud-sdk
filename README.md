@@ -13,12 +13,17 @@ var qing = require('qing');
 qing.access_key_id = 'access_key_id';
 qing.secret_access_key = 'secret_access_key';
 // call the API
-qing.DescribeInstances(function(err, data){
+qing.DescribeInstances({zone: 'pek1'}, function(err, data){
     if(err)
         console.log(err.message);
     else
         console.log(data);
-}, {zone: 'pek1'});
+});
+```
+
+## API signature
+```
+qing.apiName([opts], cbk);   // opts 为参数对象, 可选
 ```
 
 ## API
