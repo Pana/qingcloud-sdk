@@ -17,7 +17,7 @@
         },
         "RunInstances": {
             "required": ["image_id", "zone"], 
-            "optional": ["instance_type", "count", "instance_name", "login_mode", "login_keypair", "login_passwd", "vxnets.n", "security_group"]
+            "optional": ["instance_type", "memory", "cpu", "count", "instance_name", "login_mode", "login_keypair", "login_passwd", "vxnets.n", "security_group"]
         },
         "TerminateInstances": {"required": ["instances.n", "zone"], "optional": []},
         "StartInstances": {"required": ["instances.n", "zone"], "optional": []},
